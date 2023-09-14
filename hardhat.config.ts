@@ -7,8 +7,8 @@ require('dotenv').config()
 const config: HardhatUserConfig = {
   solidity: '0.8.19',
   networks: {
-    sepolia: {
-      url: process.env.SEPOLIARPC,
+    GOERLI : {
+      url: process.env.GOERLIRPC,
       //@ts-ignore
       accounts: [process.env.PRIVATEKEY],
     },
